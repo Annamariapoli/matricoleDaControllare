@@ -41,7 +41,6 @@ public class MatricoleController {
 
     @FXML
     void doCerca(ActionEvent event) {
-    
     	String s = txtMatricola.getText();                                      //--> prendo la matricola inserita dall'utente
     	txtMatricola.clear();
     	if(s.isEmpty()){                                                      //--> se non l'ha inserita
@@ -54,14 +53,9 @@ public class MatricoleController {
     		txtResult.appendText("lo studente non esiste nel database! \n ");
     		return;
     	}
-    	
-    	
+    		
     	List<Corso> CorsiStudenteCercato= model.cercaStudenteListaCorsi(s);
     	txtResult.appendText("I corsi della matricola cercata sono: " +CorsiStudenteCercato+ "\n");
-    	
-    	
-    	
-    	
     }
 
     @FXML
