@@ -7,7 +7,6 @@ public class Model {
 	
 	private List<Studente> studenti = new LinkedList<Studente>();  
 	
-
 	public void aggiungiStudente(Studente studente){      //ok
 		if(!studenti.contains(studente))
 		   studenti.add(studente);				
@@ -35,7 +34,6 @@ public class Model {
 		return null;
 	}
 	
-	
 	/*public void stampaCorsiUnoPerRiga(){          //tutte le matricole una per riga
 		String risultato="";
 		for(int i=0; i<matricole.size(); i++){
@@ -55,5 +53,4 @@ public class Model {
 		}
 	}
 	*/
-	
 }
